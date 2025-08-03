@@ -30,4 +30,4 @@ La gestión adecuada de residuos es un paso clave hacia un futuro sostenible. Mu
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/reciclaje-parada.git
+   gh repo clone frixx4731/Ecologi.git
