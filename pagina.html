@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  integrity="sha512-+1N5QWkDeZ5EJ/Jc5r3Mfwz1L5mdz5Q4ZtU6Nx5qU3fyxv68m7cf92lPv9g1Mdq+lphUOvG8ez5Hk3Y6UEhYsw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
 <head>
   <meta charset="UTF-8">
   <title>Sociedad Ideal para Reciclaje</title>
@@ -15,21 +8,31 @@
 </head>
 
 <body>
-  <header id="header" role="banner">
-    <div class="logo-container">
-      <a href="#header" aria-label="Inicio">
-        <figure>
-          <img src="imagen/agua.webp" alt="Logo de Reciclaje" width="0" height="0">
-          <figcaption style="display:none;">Reciclaje Logo</figcaption>
-        </figure>
-        <nav aria-label="Navegación principal">
-          <a href="#Lugares" class="nav-link">Lugares</a>
-          <a href="#Proyectos" class="nav-link">Proyectos</a>
-          <a href="#Segundo Uso" class="nav-link">Segundo uso</a>
-        </nav>
-      </a>
-    </div>
-  </header>
+  <header class="main-header" role="banner" id="header">
+  <div class="logo-container">
+    <a href="#header" aria-label="Inicio" class="logo-link">
+      <figure class="logo-img">
+        <img src="imagen/agua.webp" alt="Logo de Reciclaje" width="50" height="50">
+        <figcaption style="display: none;">Reciclaje Logo</figcaption>
+      </figure>
+      <span class="logo-text">Ecologi</span>
+    </a>
+  </div>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#lugares">Lugares</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#segundo-uso">Segundo uso</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
   <div class="overlay">
     <h1>“Sociedad Ideal para Reciclaje”</h1>
@@ -62,6 +65,42 @@
       </button>
     </div>
   </div>
+  <section class="proyectos">
+  <h2>Proyectos de Reciclaje</h2>
+  <p>Descubre nuestros proyectos que están transformando la comunidad y el medio ambiente.</p>
+
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <img src="imagen/basplast.jpg" alt="Proyecto plástico">
+      <div class="info">
+        <h3>Reciclaje de Plástico</h3>
+        <p>Transformamos botellas y envases en materiales reutilizables para la construcción y el arte.</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="imagen/comu.jpg" alt="Compostaje comunitario">
+      <div class="info">
+        <h3>Compostaje Comunitario</h3>
+        <p>Reducimos residuos orgánicos mediante compostaje en parques y espacios vecinales. con la ayuda de las autoridades y la organizacion de las
+          varias instituciones educativas</p>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <img src="imagen/electro.jpg" alt="Reciclaje electrónicos">
+      <div class="info">
+        <h3>Reciclaje de Electrónicos</h3>
+        <p>Recogemos aparatos electrónicos en desuso para desensamblarlos y recuperar materiales útiles.</p>
+      </div>
+    </div>
+
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+  
+    <!-- Aquí se cargará el contenido de las categorías -->
   <div class="social">
   <a href="https://www.instagram.com/tu_perfil" class="instagram" target="_blank">
     <img src="imagen/insta.svg" alt="Instagram" />
@@ -78,7 +117,7 @@
 </div>
 
   <footer>
-    <p>© 2023 Sociedad Ideal para Reciclaje. Todos los derechos reservados.</p>
+    <p>© 2025 Sociedad Ideal para Reciclaje. Todos los derechos reservados.</p>
     <p>Desarrollado por ZAID</p>
   </footer>
 </body>
